@@ -30,6 +30,8 @@ model company {
   folder               folder[]
   invitation           invitation[]
   project              project[]
+  generated_document   generated_document[]
+  ocr_result           ocr_result[]
 
   @@index([owner_id, created_at(sort: Desc)])
   @@schema("public")
@@ -394,7 +396,81 @@ model users {
   user_notification                       user_notification[]
   user_role_rel                           user_role_rel[]
   user_settings                           user_settings[]
+  generated_document                      generated_document[]
+  ocr_result                              ocr_result[]
+  ai_document_analysis                    ai_document_analysis[]
 
   @@index([created_at(sort: Desc)])
+  @@schema("public")
+}
+
+// ==================== OCR & Document Generation ====================
+
+// Сгенерированные документы (счета, накладные, акты)
+model generated_document {
+  id            Int       @id @default(autoincrement())
+  type          String    @db.VarChar(50) // invoice, waybill, completion_act
+  number        String    @db.VarChar(100) // Номер документа
+  status        String    @default("draft") @db.VarChar(50) // draft, signed, sent, paid
+  data          Json      // Все данные документа (продавец, покупатель, товары и т.д.)
+  pdf_url       String?   @db.VarChar(500) // Ссылка на сгенерированный PDF
+  total_amount  Decimal?  @db.Decimal(15, 2)
+  currency      String    @default("RUB") @db.VarChar(10)
+  company_id    Int?
+  created_by    Int?
+  created_at    DateTime? @default(now()) @db.Timestamp(6)
+  updated_at    DateTime? @default(now()) @db.Timestamp(6)
+  company       company?  @relation(fields: [company_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  users         users?    @relation(fields: [created_by], references: [id], onUpdate: NoAction)
+
+  @@index([company_id, type, created_at(sort: Desc)])
+  @@index([number])
+  @@schema("public")
+}
+
+// Результаты OCR распознавания
+model ocr_result {
+  id               Int       @id @default(autoincrement())
+  original_file    String    @db.VarChar(500) // Путь к оригинальному файлу
+  recognized_text  String?   // Распознанный текст
+  confidence       Decimal?  @db.Decimal(5, 2) // Уверенность распознавания (0-100%)
+  language         String?   @db.VarChar(10) // Язык документа
+  metadata         Json?     // Дополнительные данные (размеры, формат и т.д.)
+  processing_time  Int?      // Время обработки в мс
+  status           String    @default("pending") @db.VarChar(50) // pending, processing, completed, failed
+  error_message    String?
+  company_id       Int?
+  created_by       Int?
+  created_at       DateTime? @default(now()) @db.Timestamp(6)
+  company          company?  @relation(fields: [company_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  users            users?    @relation(fields: [created_by], references: [id], onUpdate: NoAction)
+  ai_analysis      ai_document_analysis[]
+
+  @@index([company_id, created_at(sort: Desc)])
+  @@index([status])
+  @@schema("public")
+}
+
+// Результаты анализа документов ИИ
+model ai_document_analysis {
+  id               Int        @id @default(autoincrement())
+  ocr_result_id    Int?
+  document_type    String?    @db.VarChar(100) // Тип распознанного документа
+  extracted_data   Json?      // Извлечённые структурированные данные
+  summary          String?    // Краткое описание документа
+  entities         Json?      // Извлечённые сущности (даты, суммы, организации)
+  confidence       Decimal?   @db.Decimal(5, 2)
+  model_used       String?    @db.VarChar(100) // Модель ИИ
+  tokens_used      Int?       // Использовано токенов
+  processing_time  Int?       // Время обработки в мс
+  status           String     @default("pending") @db.VarChar(50)
+  error_message    String?
+  created_by       Int?
+  created_at       DateTime?  @default(now()) @db.Timestamp(6)
+  ocr_result       ocr_result? @relation(fields: [ocr_result_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  users            users?     @relation(fields: [created_by], references: [id], onUpdate: NoAction)
+
+  @@index([ocr_result_id])
+  @@index([document_type])
   @@schema("public")
 }

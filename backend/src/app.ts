@@ -2,6 +2,7 @@
 import express, { NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import path from 'path';
 import { randomUUID } from 'crypto';
 import 'source-map-support/register';
 import logger from '@src/logger';
@@ -24,14 +25,21 @@ import { positionRoutes } from '@routes/positionRoutes';
 import { dictionaryRoutes } from '@routes/dictionaryRoutes';
 import { RequestType } from '@src/http/asyncHandler';
 import { projectRoutes } from '@routes/projectRoutes';
+import { ocrRoutes } from '@routes/ocrRoutes';
+import { documentGeneratorRoutes } from '@routes/documentGeneratorRoutes';
+import { aiAnalyzerRoutes } from '@routes/aiAnalyzerRoutes';
 
 dotenv.config({
   path: process.env.NODE_ENV === 'production' ? '.env' : '.env.dev',
 });
 
 const app = express();
-app.use(express.json());
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 app.use(cors({ origin: '*' }));
+
+// Статическая раздача файлов (для сгенерированных документов)
+app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
 
 // Логирование запросов
 app.use((req: RequestType, res: Response, next: NextFunction) => {
@@ -76,6 +84,9 @@ app.use('/user-settings', userSettingsRoutes(db));
 app.use('/employee-company', employeeCompanyRoutes(db));
 app.use('/position', positionRoutes(db));
 app.use('/dictionary', dictionaryRoutes(db));
+app.use('/ocr', ocrRoutes(db));
+app.use('/generate', documentGeneratorRoutes(db));
+app.use('/ai', aiAnalyzerRoutes(db));
 
 // Healthcheck
 app.get('/', (_req, res) => res.send('Burokrat backend, ok'));
