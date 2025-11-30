@@ -29,9 +29,12 @@ import { ocrRoutes } from '@routes/ocrRoutes';
 import { documentGeneratorRoutes } from '@routes/documentGeneratorRoutes';
 import { aiAnalyzerRoutes } from '@routes/aiAnalyzerRoutes';
 
+// Загрузка переменных окружения
 dotenv.config({
   path: process.env.NODE_ENV === 'production' ? '.env' : '.env.dev',
 });
+// Загрузка локальных секретов (переопределяет переменные из .env.dev)
+dotenv.config({ path: '.env.local', override: true });
 
 const app = express();
 app.use(express.json({ limit: '50mb' }));
