@@ -1,0 +1,24 @@
+services:
+  app:
+    build: .
+    container_name: burokrat-node
+    env_file:
+      - .env.dev
+    ports:
+      - "8001:8001"
+    networks:
+      - burokrat-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 10s         # интервал между проверками
+      timeout: 5s           # время, через которое healthcheck завершится, если не получен ответ
+      retries: 3            # сколько раз healthcheck будет пытаться до перехода в состояние "unhealthy"
+#    volumes:
+#      - /app/node_modules   # Только для контейнера, чтобы не монтировать локальные node_modules
+
+#    command: sh -c "npm ci && npm start"
+    command: sh -c "npm start"
+
+networks:
+  burokrat-network:
+    external: true

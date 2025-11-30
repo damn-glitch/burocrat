@@ -1,0 +1,6 @@
+// prisma/schema.migrate.prisma
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  schemas  = ["only_app"]
+}

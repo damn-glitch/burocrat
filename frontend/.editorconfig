@@ -1,0 +1,3 @@
+[*.{js,jsx,ts,tsx}]
+ij_javascript_space_inside_jsx_braces = true
+ij_javascript_space_within_jsx_attribute_braces = true

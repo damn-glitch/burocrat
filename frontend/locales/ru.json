@@ -1,0 +1,527 @@
+{
+    "forgotPassword": {
+        "title": "Восстановление пароля",
+        "emailDescription": "Введите email, привязанный к вашей учётной записи. Мы отправим вам ссылку для сброса пароля.",
+        "emailLabel": "Email",
+        "emailPlaceholder": "Введите ваш email",
+        "continue": "Продолжить"
+    },
+    "login": {
+        "welcomeMain": "С возвращением!",
+        "welcomeSecondary": "Войдите, чтобы продолжить работу со сервисом",
+        "labelEmail": "Email",
+        "placeholderEmail": "Введите ваш email",
+        "labelPassword": "Пароль",
+        "placeholderPassword": "Введите пароль",
+        "forgotPassword": "Забыли пароль?",
+        "loginButton": "Войти",
+        "or": "или",
+        "googleButton": "Войти с Google",
+        "noAccount": "Нет аккаунта? Зарегистрируйтесь",
+        "errorEmail": "Введите корректный email"
+    },
+    "register": {
+        "title": "Регистрация аккаунта",
+        "emailDescription": "Укажите рабочий email, чтобы создать учётную запись.",
+        "emailLabel": "Email",
+        "emailPlaceholder": "Введите ваш email",
+        "continue": "Продолжить",
+        "or": "или",
+        "continueWithGoogle": "Продолжить с Google",
+        "alreadyHaveAccount": "Уже есть аккаунт? Войти"
+    },
+    "createNewPassword": {
+        "title": "Восстановление пароля",
+        "description": "Введите новый пароль для вашей учётной записи.",
+        "label": "Новый Пароль",
+        "placeholder": "Ваш новый пароль",
+        "saveButton": "Сохранить пароль"
+    },
+    "verificationCode": {
+        "title": "Подтверждение email",
+        "description": "Мы отправили код подтверждения на указанный email.",
+        "error": "Неверный код подтверждения",
+        "inputLabel": "Введите код из письма",
+        "continue": "Продолжить",
+        "resend": "Отправить код ещё раз"
+    },
+    "registerCreatePassword": {
+        "title": "Создание Пароля",
+        "description": "Придумайте новый пароль для учетной записи",
+        "label": "Новый Пароль",
+        "placeholder": "Ваш новый пароль",
+        "continueButton": "Продолжить"
+    },
+    "userData": {
+        "title": "Дополните данные",
+        "firstNameLabel": "Имя",
+        "firstNamePlaceholder": "Ваше Имя",
+        "lastNameLabel": "Фамилия",
+        "lastNamePlaceholder": "Ваша Фамилия (Необязательно)",
+        "registerButton": "Зарегистрироваться"
+    },
+    "registerVerificationCode": {
+        "title": "Подтверждение email",
+        "description": "Мы отправили код подтверждения регистрации на указанный email.",
+        "error": "Неверный код подтверждения",
+        "inputLabel": "Введите код из письма",
+        "continue": "Продолжить",
+        "resend": "Отправить код ещё раз"
+    },
+    "main": {
+        "welcome": "Добро пожаловать",
+        "helpTitle": "Как я могу помочь?",
+        "projectsTitle": "Проекты",
+        "projectsLink": "Посмотреть все",
+        "tasksTitle": "Задачи на сегодня",
+        "tasksLink": "Посмотреть все",
+        "helpCards": {
+            "scanTitle": "Сканировать",
+            "scanDescription": "Документы, ID карты...",
+            "editTitle": "Редактировать",
+            "editDescription": "Подписать, добавить...",
+            "generateTitle": "Генерировать",
+            "generateDescription": "Договор, документ...",
+            "askAiTitle": "Спросить ИИ",
+            "askAiDescription": "Подвести итог, объяснить..."
+        }
+    },
+    "notifications": {
+        "title": "Уведомления",
+        "tabs": {
+            "all": "Все",
+            "users": "Пользователи",
+            "ai": "ИИ"
+        },
+        "requestAccept": "Принять",
+        "requestDecline": "Отклонить",
+        "empty": "Нет уведомлений"
+    },
+    "profile": {
+        "title": "Профиль",
+        "viewProfile": "Посмотреть профиль",
+        "settingsTitle": "Настройки аккаунта",
+        "personalInfo": "Персональная информация",
+        "language": "Язык",
+        "notifications": "Уведомления",
+        "privacy": "Конфиденциальность",
+        "logout": "Выход"
+    },
+    "participants": {
+        "title": "Участники",
+        "addModalTitle": "Добавление участников",
+        "addDescription": "Добавьте участников по электронной почте или отправьте ссылку",
+        "emailLabel": "Email",
+        "emailPlaceholder": "Эл. почта",
+        "roleLabel": "Роль",
+        "sendButton": "Отправить",
+        "sentStatus": "Отправлено",
+        "invitedUserTitle": "Приглашенный пользователь",
+        "companyParticipants": "Участники компании",
+        "permissionsHeader": "Имеет право на:",
+        "linkTitle": "Ссылка для добавления",
+        "linkDescription": "Любой пользователь с ссылкой сможет подключиться",
+        "copyButton": "Скопировать",
+        "errors": {
+            "emptyEmail": "Введите email для отправки приглашения",
+            "invalidEmail": "Пожалуйста, введите корректный email",
+            "duplicateEmail": "Участник с таким email уже добавлен"
+        },
+        "roles": {
+            "owner": "Владелец",
+            "admin": "Администратор",
+            "executor": "Исполнитель",
+            "observer": "Наблюдатель"
+        },
+        "permissions": {
+            "signing": "Подписание",
+            "printing": "Печать",
+            "editing": "Редактирование",
+            "deleting": "Удаление",
+            "commenting": "Комментирование",
+            "viewing": "Просмотр"
+        }
+    },
+    "companies": {
+        "list": {
+            "title": "Компании",
+            "tabs": {
+                "active": "Активные",
+                "archive": "Архив"
+            },
+            "emptyActive": "Нет активных компаний",
+            "emptyArchive": "В архиве пока пусто"
+        },
+        "edit": {
+            "title": "Редактирование компании",
+            "companyName": "Название компании",
+            "companyNamePlaceholder": "Введите название компании",
+            "color": "Цвет",
+            "detailsTitle": "Подробная информация",
+            "description": "Описание",
+            "descriptionPlaceholder": "Введите описание",
+            "legalForm": "Юридическая форма",
+            "legalFormPlaceholder": "Выберите юридическую форму",
+            "industry": "Отрасль",
+            "industryPlaceholder": "Выберите отрасль",
+            "saveButton": "Сохранить",
+            "legalForms": {
+                "LLC": "ООО",
+                "JSC": "АО",
+                "SP": "ИП",
+                "CJSC": "ЗАО",
+                "PJSC": "ПАО"
+            },
+            "industries": {
+                "IT": "IT и разработка",
+                "manufacturing": "Производство",
+                "trade": "Торговля",
+                "construction": "Строительство",
+                "finance": "Финансы",
+                "education": "Образование",
+                "medicine": "Медицина",
+                "transport": "Транспорт",
+                "agriculture": "Сельское хозяйство",
+                "services": "Услуги",
+                "other": "Другое"
+            }
+        },
+        "create": {
+            "title": "Создание компании",
+            "createButton": "Создать компанию"
+        },
+        "roles": {
+            "owner": "Владелец",
+            "admin": "Админ",
+            "user": "Пользователь",
+            "guest": "Гость",
+            "executor": "Исполнитель",
+            "observer": "Наблюдатель"
+        },
+        "status": {
+            "active": "Активная",
+            "archived": "Архивная"
+        },
+        "actions": {
+            "edit": "Редактировать",
+            "delete": "Удалить",
+            "archive": "Архивировать",
+            "unarchive": "Разархивировать",
+            "share": "Поделиться"
+        },
+        "companyCard": {
+            "role": "Роль",
+            "creationDate": "Дата создания",
+            "actions": {
+                "restore": "Восстановить из архива",
+                "delete": "Удалить компанию",
+                "share": "Отправить ссылку",
+                "edit": "Редактировать"
+            },
+            "confirmModal": {
+                "title": "Убрать проект “{{title}}”?",
+                "description": "Компания и все её проекты будут перемещены в архив. Данные сохранятся и могут быть восстановлены позже.",
+                "confirmText": "Переместить в архив",
+                "cancelText": "Отмена"
+            }
+        }
+    },
+    "calendar": {
+        "months": {
+            "january": "Январь",
+            "february": "Февраль",
+            "march": "Март",
+            "april": "Апрель",
+            "may": "Май",
+            "june": "Июнь",
+            "july": "Июль",
+            "august": "Август",
+            "september": "Сентябрь",
+            "october": "Октябрь",
+            "november": "Ноябрь",
+            "december": "Декабрь"
+        },
+        "monthsShort": {
+            "jan": "Янв",
+            "feb": "Фев",
+            "mar": "Мар",
+            "apr": "Апр",
+            "may": "Май",
+            "jun": "Июн",
+            "jul": "Июл",
+            "aug": "Авг",
+            "sep": "Сен",
+            "oct": "Окт",
+            "nov": "Ноя",
+            "dec": "Дек"
+        },
+        "days": {
+            "sunday": "Воскресенье",
+            "monday": "Понедельник",
+            "tuesday": "Вторник",
+            "wednesday": "Среда",
+            "thursday": "Четверг",
+            "friday": "Пятница",
+            "saturday": "Суббота"
+        },
+        "daysShort": {
+            "sun": "Вс",
+            "mon": "Пн",
+            "tue": "Вт",
+            "wed": "Ср",
+            "thu": "Чт",
+            "fri": "Пт",
+            "sat": "Сб"
+        },
+        "today": "Сегодня",
+        "actions": {
+            "clear": "Очистить",
+            "save": "Сохранить"
+        }
+    },
+    "navigation": {
+        "tabs": {
+            "main": "Главная",
+            "companies": "Компании",
+            "analytics": "Аналитика",
+            "finances": "Финансы"
+        }
+    },
+    "analytics": {
+        "title": "Аналитика",
+        "actions": {
+            "viewTasks": "Просмотреть задачи"
+        },
+        "cards": {
+            "activeProjects": "Активных проектов",
+            "tasksOnTime": "Задач выполнено в срок",
+            "tasksOverdue": "Просроченных задач",
+            "lowStock": "Товаров в малом остатке"
+        },
+        "tasks": {
+            "commonTasks": "Общие задачи",
+            "distributedByProjects": "Распределены по {{count}} проектам.",
+            "tasks": "Задачи"
+        },
+        "period": {
+            "selected": "Выбранный период"
+        }
+    },
+    "finances": {
+        "title": "Финансы",
+        "selectCompany": "Выберите компанию",
+        "periodLabel": "Выбранный период",
+        "updateTitle": "Обновление",
+        "updateDate": "{{date}}",
+        "updateText": "{{text}}",
+        "analyticCards": {
+            "newOrders": "Новых заказов",
+            "closedOrders": "Закрытых заказов",
+            "overdueTasks": "Просроченных задач",
+            "lowStock": "Товаров в малом остатке"
+        },
+        "budget": {
+            "title": "Бюджет",
+            "label": "Осталось на {{months}} месяца",
+            "spent": "{{amount}} уже потрачен"
+        },
+        "expenses": {
+            "title": "Затраты",
+            "legend": {
+                "Закупка товаров": "Закупка товаров",
+                "Аренда помещений": "Аренда помещений",
+                "Зарплата персонала": "Зарплата персонала",
+                "Маркетинг": "Маркетинг",
+                "Логистика": "Логистика"
+            }
+        },
+        "warning": {
+            "logistics": "Расходы на логистику увеличились на 12%. Это может указывать на рост цен поставщиков или изменение маршрутов доставки."
+        }
+    },
+    "addTask": {
+        "header": "Добавить задачу",
+        "mainTitle": "Создание новой задачи",
+        "fields": {
+            "title": "Название",
+            "titlePlaceholder": "Введите название задачи",
+            "type": "Тип задачи",
+            "description": "Описание",
+            "descriptionPlaceholder": "Введите описание задачи",
+            "participants": "Участники",
+            "other": "Другие",
+            "add": "Добавить",
+            "files": "Файлы",
+            "companyDocuments": "Документы компании",
+            "more": "Еще",
+            "uploadFile": "Загрузить файл",
+            "removeFile": "✕",
+            "deadlines": "Сроки задачи",
+            "location": "Локация",
+            "locationPlaceholder": "Введите локацию"
+        },
+        "filesSection": {
+            "description": "Прикрепите файлы, которые понадобятся для выполнения задачи.",
+            "hint": "Выберите файл или перетащите его сюда\nPDF, DOC, PNG, JPEG форматы до 50 МБ",
+            "removeButton": "Удалить"
+        },
+        "selectDocs": {
+            "header": "Добавление файлов",
+            "title": "Добавление файлов",
+            "searchPlaceholder": "Поиск по документам",
+            "loadMore": "Загрузить больше",
+            "collapse": "Свернуть",
+            "addButtonPlaceholder": "Выберите файлы для добавления",
+            "addButtonPrefix": "Добавить"
+        },
+        "period": {
+            "today": "Сегодня",
+            "tomorrow": "Завтра",
+            "choose": "Выбрать период",
+            "selectedLabel": "Выбранный период"
+        },
+        "time": {
+            "from": "С",
+            "to": "До"
+        },
+        "errors": {
+            "emptyTitle": "Введите название задачи"
+        },
+        "saveButton": "Сохранить"
+    },
+    "allTasks": {
+        "header": "Все задачи",
+        "sortPlaceholder": "Сортировка",
+        "periodLabel": "Выбранный период",
+        "filters": {
+            "all": "Все",
+            "toDo": "К выполнению",
+            "inProgress": "В процессе",
+            "done": "Завершено"
+        },
+        "todayTasks": "Задачи на сегодня",
+        "dateTasks": "Задачи на {{date}}",
+        "completed": "Выполнено",
+        "waiting": "В ожидании",
+        "edit": "Редактировать",
+        "location": "Локация",
+        "participants": "Участники",
+        "attachedFiles": "Прикрепленные файлы",
+        "attachedFilesSubtitle": "Файлы прикрепленные к этой задаче",
+        "noFiles": "Нет прикрепленных файлов"
+    },
+    "projectForm": {
+        "headerCreate": "Новый проект",
+        "headerEdit": "Редактировать проект",
+        "mainTitleCreate": "Создание нового проекта",
+        "mainTitleEdit": "Редактирование проекта",
+        "fields": {
+            "title": "Название",
+            "titlePlaceholder": "Название проекта",
+            "description": "Описание",
+            "descriptionPlaceholder": "Опишите проект",
+            "color": "Цвет",
+            "detailsTitle": "Детали проекта",
+            "participants": "Участники",
+            "addParticipant": "Добавить",
+            "files": "Файлы",
+            "filesDescription": "Прикрепите файлы, важные для проекта. Участники смогут увидеть их в разделе «О проекте».",
+            "filesHint": "Выберите файл или перетащите его сюда\n\\PDF, DOC, PNG, JPEG форматы до 50 МБ",
+            "uploadFile": "Добавить файл",
+            "removeFile": "Удалить",
+            "period": "Сроки",
+            "periodLabel": "Выбранный период",
+            "periodValue": "Не выбрано",
+            "clearPeriod": "Очистить"
+        },
+        "saveButtonCreate": "Сохранить",
+        "saveButtonEdit": "Сохранить изменения"
+    },
+    "fileUploadModal": {
+        "header": "Загрузка файлов",
+        "helperText": "Выберите и загрузите файлы на ваш выбор",
+        "dropZoneText": "Выберите файл или перенесите его сюда",
+        "dropZoneSubtext": "PDF, DOC, PNG, JPEG форматы до 50 МБ",
+        "addFileButton": "Добавить файл",
+        "fileUploading": "Загрузка",
+        "fileUploaded": "Загружено",
+        "doneButton": "Готово"
+    },
+    "folder": {
+        "editTitle": "Изменение папки",
+        "nameLabel": "Название",
+        "namePlaceholder": "Введите название папки",
+        "descriptionLabel": "Описание",
+        "descriptionPlaceholder": "Добавьте описание папки",
+        "emptyTitle": "В этой папке пока нет файлов",
+        "emptySubtitle": "Загрузите документы, чтобы начать работу",
+        "saveButton": "Сохранить",
+        "noDescription": "Описание папки пока отсутствует",
+        "meta": "{{count}} {{files}} • {{size}}",
+        "files_one": "файл",
+        "files_few": "файла",
+        "files_many": "файлов",
+        "files_other": "файла",
+        "documentActions": {
+            "share": "Поделиться документом",
+            "move": "Переместить документ",
+            "rename": "Переименовать документ",
+            "delete": "Удалить документ"
+        },
+        "actions": {
+            "share": "Поделиться",
+            "move": "Переместить",
+            "edit": "Изменить папку",
+            "delete": "Удалить"
+        }
+    },
+    "documentsTab": {
+        "files_one": "файл",
+        "files_few": "файла",
+        "files_many": "файлов",
+        "files_other": "файла",
+        "actions": {
+            "upload": "Документ",
+            "createFolder": "Папка"
+        },
+        "empty": {
+            "title": "Здесь пока пусто",
+            "subtitle": "Загрузите документ или создайте новую папку"
+        },
+        "documentActions": {
+            "share": "Поделиться",
+            "move": "Переместить",
+            "rename": "Переименовать",
+            "delete": "Удалить"
+        },
+        "folderActions": {
+            "share": "Поделиться папкой",
+            "move": "Переместить папку",
+            "edit": "Изменить папку",
+            "delete": "Удалить папку"
+        },
+        "modal": {
+            "createTitle": "Создание папки",
+            "editTitle": "Изменение папки",
+            "nameLabel": "Название",
+            "namePlaceholder": "Введите название папки",
+            "descriptionLabel": "Описание",
+            "descriptionPlaceholder": "Добавьте описание папки",
+            "createButton": "Создать",
+            "saveButton": "Сохранить"
+        }
+    },
+    "search": {
+        "title": "Поиск",
+        "placeholder": "Поиск по документам, компаниям и проектам",
+        "documentsSection": "Документы",
+        "companiesSection": "Компании",
+        "projectsSection": "Проекты",
+        "documentsCount": "{{count}} документов",
+        "companiesCount": "{{count}} компаний",
+        "projectsCount": "{{count}} проектов",
+        "loadMore": "Загрузить больше",
+        "addFilesButton": "Выберите файлы для добавления",
+        "noResults": "По запросу ничего не найдено"
+    }
+}

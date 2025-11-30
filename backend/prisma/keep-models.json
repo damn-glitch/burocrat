@@ -1,0 +1,30 @@
+{
+  "models": [
+    "company",
+    "country",
+    "document",
+    "document_attachment",
+    "employee_company_rel",
+    "employee_project_rel",
+    "folder",
+    "industry",
+    "invitation",
+    "legal_form",
+    "notification",
+    "otp",
+    "permissions",
+    "position",
+    "project",
+    "refresh_token",
+    "role_permission_rel",
+    "roles",
+    "settings",
+    "task",
+    "task_log",
+    "user_company_rel",
+    "user_notification",
+    "user_role_rel",
+    "user_settings",
+    "users"
+  ]
+}

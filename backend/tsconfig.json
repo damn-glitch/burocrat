@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {
+      "@prismaLocal/*": [
+        "prisma/*"
+      ],
+      "@src/*": [
+        "src/*"
+      ],
+      "@controllers/*": [
+        "src/controllers/*"
+      ],
+      "@routes/*": [
+        "src/routes/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ]
+    },
+    "rootDir": ".",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "resolveJsonModule": true,
+    "types": [
+      "node",
+      "jest",
+    ],
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
+  },
+  "include": [
+    "src",
+    "src/types/**/*.d.ts",
+    "tests",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
